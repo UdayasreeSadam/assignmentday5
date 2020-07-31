@@ -1,0 +1,222 @@
+//Different ways of printing output in javascript
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			welcome to javascript classes
+		</title>
+	</head>
+	<body>
+		<h1>javascript is easy to learn</h1>
+		<p id="demo"></p>
+		<script>
+			document.getElementById("demo").innerHTML = 10 + 20;
+			window.alert(15 + 20);
+			document.write(20 + 50);
+			console.log("hello world");
+		</script>
+	
+	</body>
+</html>
+
+output:
+welcome to javascript classes
+Javascript is easy to learn
+30
+35
+70
+helloworld
+
+
+//variables
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+		var x, y, z;  
+		x = 70;       
+		y = 6;       
+		z = x + y;    
+		document.getElementById("demo").innerHTML ="value of z is " + z ;  
+	</script>
+	</body>
+</html>
+
+output: value of z is 76
+
+
+//concatenation of strings
+
+<!DOCTYPE html>
+<html>
+	<body>
+	<p id="demo"></p>
+	<script>
+		var firstname,lastname;
+		firstname="udayasree";
+		lastname="sadam"
+		document.getElementById("demo").innerHTML = firstname + lastname;
+	</script>
+
+	</body>
+</html>
+
+output: udayasree sadam
+
+//arrays
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+		var lappys = ["HP","Dell","lenovo"];
+		document.getElementById("demo").innerHTML = lappys;
+	</script>
+	</body>
+</html>
+output: HP,Dell,lenovo
+
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+		var num = [1,2,3,4,5];
+		document.getElementById("demo").innerHTML = num[0]+num[1]+num[2]+num[3]+num[4];
+	</script>
+	</body>
+</html>
+output: 1,2,3,4,5
+
+//functions
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	function hello() {
+  		document.getElementById("demo").innerHTML = "hello";
+	}
+	hello();
+	</script>
+	</body>
+</html>
+
+output: hello
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	function product(p1, p2) {
+  		return p1 * p2;
+	}
+	document.getElementById("demo").innerHTML = product(2,5);
+	</script>
+	</body>
+</html>
+
+output: 10
+
+//conditions
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	var a,b,c;
+	a=10;
+	b=20;
+	if (a < b){
+	c=" a is less than b";
+	}
+	else if ( a > b){
+	c=" a is greater than b";
+	}
+	else{
+	c=" none of the above";
+	document.getElementById("demo").innerHTML = c;
+	</script>
+	</body>
+</html>
+
+output: a is less than b
+
+//loops
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	var a;
+	for (let i = 0; i < 5; i++) {
+  	a= "value is: "+i;
+	}
+	document.getElementById("demo").innerHTML = a;
+	</script>
+	</body>
+</html>
+
+output: value is 0
+value is 1
+value is 2
+value is 3
+value is 4
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	var a;
+	var i=0;
+	while(i<5) {
+  	a= "value is: "+i;
+	i++;
+	}
+	document.getElementById("demo").innerHTML = a;
+	</script>
+	</body>
+</html>
+
+output: value is 0
+value is 1
+value is 2
+value is 3
+value is 4
+
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="demo"></p>
+	<script>
+	var a;
+	var i=0;
+	do{
+  	a= "value is: "+i;
+	i++;
+	}while(i<5);
+	document.getElementById("demo").innerHTML = a;
+	</script>
+	</body>
+</html>
+
+output: value is 0
+value is 1
+value is 2
+value is 3
+value is 4
+
+
+
+
